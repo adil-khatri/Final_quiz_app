@@ -2,6 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_app_kjs/services/database.dart';
 
+
+String dummyText = "Computer networking";
 class Product {
   final String image, title, description, id;
   final int size;
@@ -112,7 +114,7 @@ List<Product> products = [
       id: "2",
       title: "Computer Network",
       size: 12,
-      description: "ddddddddddddd",
+      description: dummyText,
       image: "assets/images/cn.png",
       color: Colors.blue.shade400),
   Product(
